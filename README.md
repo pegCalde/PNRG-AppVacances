@@ -23,7 +23,7 @@ Cette application permet à l’utilisateur de consulter différents lieux de va
 * Utilisation de fonctionnalités natives (Custom Renderer et Dependency Service) : (à définir)  
 
 * Utilisation d’une navigation avancée (TabbedPage, SideMenu…) :  
-    ..*Main page = la liste des lieux de vacances  
-    ..*l’utilisateur pourra accéder à une autre page grâce à un menu pour voir sa liste de lieu favoris  
+    * Main page = la liste des lieux de vacances  
+    * l’utilisateur pourra accéder à une autre page grâce à un menu pour voir sa liste de lieu favoris  
 
 ## ?
