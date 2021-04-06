@@ -26,4 +26,20 @@ Cette application permet à l’utilisateur de consulter différents lieux de va
     * Main page = la liste des lieux de vacances  
     * l’utilisateur pourra accéder à une autre page grâce à un menu pour voir sa liste de lieu favoris  
 
-## ?
+## Découpage des tâches
+* structure
+* Classe lieux de vacances (que contient l'objet/entité -> nom, pays,...)
+* Side menu = nav
+   * Que contient le menu ?
+* Liste
+* Construction des pages
+* Connexion à l'API météo
+   * Création d'une fonction d'appel à l'API
+   * Connexion avec le front
+* Persistance des données
+* 
+
+
+## Maquette
+![Untitled Diagram](https://user-images.githubusercontent.com/50577515/113722394-ab963f00-96f0-11eb-8446-5ce20369ed5d.png)
+
