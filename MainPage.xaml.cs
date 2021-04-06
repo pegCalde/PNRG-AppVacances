@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace appXamarinTest
+namespace PNRG-AppVacances
 {
     public partial class MainPage : ContentPage
     {
