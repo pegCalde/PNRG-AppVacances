@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EnvWinProjectQuizz.Model;
+using PNRG-AppVacances.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EnvWinProjectQuizz.Views
+namespace PNRG-AppVacances.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestPageDropdown : ContentPage
     {
         public TestPageDropdown()
