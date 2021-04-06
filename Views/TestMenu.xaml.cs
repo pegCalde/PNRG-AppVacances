@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EnvWinProjectQuizz.Views
+namespace PNRG-AppVacances.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestMenu : MasterDetailPage
     {
         /* Nouvel item = Page maitre/detail, ca crée 4 fichiers. 
