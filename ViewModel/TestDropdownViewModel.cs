@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 
-namespace EnvWinProjectQuizz.Model
+namespace PNRG-AppVacances.Model
 {
     class TestDropdownViewModel
     {
