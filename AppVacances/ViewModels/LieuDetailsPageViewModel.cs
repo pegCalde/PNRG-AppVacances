@@ -29,5 +29,17 @@ namespace AppVacances
                 SetProperty(ref nom, value);
             }
         }
+
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                SetProperty(ref description, value);
+            }
+        }
     }
 }
