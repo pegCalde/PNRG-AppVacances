@@ -9,52 +9,25 @@ namespace AppVacances
 
 
     {
-
-        string intitule;
+        string nom;
         string description;
-        string image;
+        string img;
+        string[] imgs;
+        bool estFav;
+        int notation;
+        double température;
+        string icôneMétéo;
 
-
-
-        public string Intitule
+        public string Nom
         {
             get
             {
-                return intitule;
+                return nom;
             }
             set
             {
-                SetProperty(ref intitule, value);
+                SetProperty(ref nom, value);
             }
         }
-        public string Description
-        {
-            get
-            {
-                return description;
-            }
-            set
-            {
-                SetProperty(ref description, value);
-            }
-        }
-        public string Image
-        {
-            get
-            {
-                return image ;
-            }
-            set
-            {
-                SetProperty(ref image, value);
-            }
-        }
-        public LieuDetailsPageViewModel(Lieu lieu)
-        {
-            Intitule = "Rome";
-            Description = "texte";
-            Image = "rome.jpg";
-        }
-       
     }
 }
