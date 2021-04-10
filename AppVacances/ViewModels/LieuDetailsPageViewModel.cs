@@ -51,7 +51,7 @@ namespace AppVacances
         }
         public LieuDetailsPageViewModel(Lieu lieu)
         {
-            Lieu = lieu.lie
+           
         }
        
     }
