@@ -3,23 +3,59 @@ namespace AppVacances
 {
     public class Lieu
     {
-        string intitule;
+        string nom;
         string description;
-        string image;
+        string img;
+        string[] imgs;
+        bool estFav;
+        int notation;
+        double température;
+        string icôneMétéo;
 
-        public string Intitule
+
+        public string Nom
         {
             get;
             set;
         }
 
-            public string Description
+        public string Description
         {
             get;
             set;
         }
 
-        public string Image
+        public string Img
+        {
+            get;
+            set;
+        }
+
+        public string[] Imgs
+        {
+            get;
+            set;
+        }
+
+        public bool EstFav
+        {
+            get;
+            set;
+        }
+
+        public int Notation
+        {
+            get;
+            set;
+        }
+
+        public double Température
+        {
+            get;
+            set;
+        }
+
+        public string IcôneMétéo
         {
             get;
             set;
