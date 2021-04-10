@@ -72,11 +72,23 @@ namespace AppVacances
         {
             get
             {
-                return true;
+                return estFav;
             }
             set
             {
-               
+                SetProperty(ref estFav, value);
+
+            }
+        }
+        public int Notation
+        {
+            get
+            {
+                return notation;
+            }
+            set
+            {
+                SetProperty(ref notation, value);
             }
         }
 
