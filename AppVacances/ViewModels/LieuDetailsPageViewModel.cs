@@ -68,5 +68,17 @@ namespace AppVacances
             }
         }
 
+        public bool EstFav
+        {
+            get
+            {
+                return true;
+            }
+            set
+            {
+               
+            }
+        }
+
     }
 }
