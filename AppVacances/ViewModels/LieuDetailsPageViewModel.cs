@@ -91,6 +91,17 @@ namespace AppVacances
                 SetProperty(ref notation, value);
             }
         }
+        public double Température
+        {
+            get
+            {
+                return température;
+            }
+            set
+            {
+                SetProperty(ref température, value);
+            }
+        }
 
     }
 }
