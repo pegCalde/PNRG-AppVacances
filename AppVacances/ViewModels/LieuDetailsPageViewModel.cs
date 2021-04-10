@@ -51,7 +51,9 @@ namespace AppVacances
         }
         public LieuDetailsPageViewModel(Lieu lieu)
         {
-           
+            Intitule = "Rome";
+            Description = "texte";
+            Image = "rome.jpg";
         }
        
     }
