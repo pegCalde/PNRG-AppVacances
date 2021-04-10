@@ -139,4 +139,13 @@ A mettre sur le coeur à cocher/décocher + étoiles de notation si on a le tps
 Faire des recherches sur ce custom renderer  
 Celui qui a le tps prend
 
+### recherches
+
+https://www.syncfusion.com/blogs/post/how-to-create-custom-renderers-for-a-control-in-xamarin-forms.aspx
+
+## API météo gratuites
+
+https://geekflare.com/fr/weather-api/
+
 ## ...
+
