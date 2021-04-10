@@ -54,5 +54,19 @@ namespace AppVacances
                 SetProperty(ref img, value);
             }
         }
+
+
+        public string [] Imgs
+        {
+            get
+            {
+                return imgs;
+            }
+            set
+            {
+                SetProperty(ref imgs, value);
+            }
+        }
+
     }
 }
