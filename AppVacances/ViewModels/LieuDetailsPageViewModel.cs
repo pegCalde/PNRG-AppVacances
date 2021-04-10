@@ -101,6 +101,19 @@ namespace AppVacances
             {
                 SetProperty(ref température, value);
             }
+
+        }
+
+              public string IcôneMétéo
+        {
+            get
+            {
+                return icôneMétéo;
+            }
+            set
+            {
+                SetProperty(ref icôneMétéo, value);
+            }
         }
 
     }
