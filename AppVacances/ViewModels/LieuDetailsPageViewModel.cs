@@ -17,7 +17,9 @@ namespace AppVacances
         int notation;
         double température;
         string icôneMétéo;
+   
 
+      
         public string Nom
         {
             get
@@ -114,6 +116,18 @@ namespace AppVacances
             {
                 SetProperty(ref icôneMétéo, value);
             }
+        }
+
+        public LieuDetailsPageViewModel(Lieu lieu)
+        {
+            Nom = lieu.Nom;
+            Description = lieu.Description;
+            Img = lieu.Img;
+            Imgs = lieu.Imgs;
+            EstFav = lieu.EstFav;
+            Notation = lieu.Notation;
+            Température = lieu.Température;
+            IcôneMétéo = lieu.IcôneMétéo;
         }
 
     }
