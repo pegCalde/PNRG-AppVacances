@@ -5,7 +5,7 @@
     x:Class="AppVacances.LieuListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView HorizontalOptions="FillAndExpand" ItemsSource="{Binding Users}" SelectedItem="{Binding UserSelected, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+            <ListView HorizontalOptions="FillAndExpand" ItemsSource="{Binding Lieux}" SelectedItem="{Binding LieuSelected, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
