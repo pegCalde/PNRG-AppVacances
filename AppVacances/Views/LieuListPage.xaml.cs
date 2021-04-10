@@ -10,6 +10,10 @@ namespace AppVacances
         public LieuListPage()
         {
             InitializeComponent();
+            BindingContext = new LieuListPageViewModel();
         }
+
+
+     
     }
 }
