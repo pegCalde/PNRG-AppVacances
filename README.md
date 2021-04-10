@@ -79,7 +79,7 @@ Cette application permet à l’utilisateur de consulter différents lieux de va
 ### Guillaume
 * Structure OK
 * Persistance des données
-* Classe lieux de vacances (que contient l'objet/entité -> nom, pays,...) EN COURS
+* Classe lieux de vacances (que contient l'objet/entité -> nom, pays,...) OK
 * Création partie user sur page accueil -> nom + img profil
 * Custom Renderer
 *  Liste des lieux EN COURS
