@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:AppVacances;assembly=AppVacances"
+            x:Class="AppVacances.BottomNavBar">
+    
+    <local:LieuListPage /> <!--Page d'accueil-->
+    
+    <NavigationPage Title="Details"> <!--Page détails-->
+        <x:Arguments>
+            <local:LieuDetailsPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+    <local:FavoriListPage /> <!--Page des favoris-->
+    
+</TabbedPage>

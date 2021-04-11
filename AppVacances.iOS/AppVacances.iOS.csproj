@@ -113,86 +113,246 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\athenes1.imageset\athenes1.jpg" />
-    <ImageAsset Include="Assets.xcassets\athenes1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\athenes2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\athenes2.imageset\athenes2.jpg" />
-    <ImageAsset Include="Assets.xcassets\athenes3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\athenes3.imageset\athenes3.jpg" />
-    <ImageAsset Include="Assets.xcassets\athenes4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\athenes4.imageset\athenes4.jpg" />
-    <ImageAsset Include="Assets.xcassets\rome1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\rome1.imageset\rome1.jpg" />
-    <ImageAsset Include="Assets.xcassets\rome2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\rome2.imageset\rome2.jpg" />
-    <ImageAsset Include="Assets.xcassets\rome3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\rome3.imageset\rome3.jpg" />
-    <ImageAsset Include="Assets.xcassets\rome4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\rome4.imageset\rome4.jpg" />
-    <ImageAsset Include="Assets.xcassets\honolulu1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\honolulu2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\honolulu3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\honolulu4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\lisbonne1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\lisbonne2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\lisbonne3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\lisbonne4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\londres1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\londres2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\londres3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\londres4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\madrid1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\madrid2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\madrid3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\madrid4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\newyork1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\newyork2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\newyork3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\newyork4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\paris1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\paris2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\paris3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\paris4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tokyo1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tokyo2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tokyo3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tokyo4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\singapour1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\singapour2.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\singapour3.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\singapour4.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\honolulu1.imageset\honolulu1.jpg" />
-    <ImageAsset Include="Assets.xcassets\honolulu2.imageset\honolulu2.jpg" />
-    <ImageAsset Include="Assets.xcassets\honolulu3.imageset\honolulu3.jpg" />
-    <ImageAsset Include="Assets.xcassets\honolulu4.imageset\honolulu4.jpg" />
-    <ImageAsset Include="Assets.xcassets\lisbonne1.imageset\lisbonne1.jpg" />
-    <ImageAsset Include="Assets.xcassets\lisbonne2.imageset\lisbonne2.jpg" />
-    <ImageAsset Include="Assets.xcassets\lisbonne3.imageset\lisbonne3.jpg" />
-    <ImageAsset Include="Assets.xcassets\lisbonne4.imageset\lisbonne4.jpg" />
-    <ImageAsset Include="Assets.xcassets\londres1.imageset\londres1.jpg" />
-    <ImageAsset Include="Assets.xcassets\londres2.imageset\londres2.jpg" />
-    <ImageAsset Include="Assets.xcassets\londres3.imageset\londres3.jpg" />
-    <ImageAsset Include="Assets.xcassets\londres4.imageset\londres4.jpg" />
-    <ImageAsset Include="Assets.xcassets\madrid1.imageset\madrid1.jpg" />
-    <ImageAsset Include="Assets.xcassets\madrid2.imageset\madrid2.jpg" />
-    <ImageAsset Include="Assets.xcassets\madrid3.imageset\madrid3.jpg" />
-    <ImageAsset Include="Assets.xcassets\madrid4.imageset\madrid4.jpg" />
-    <ImageAsset Include="Assets.xcassets\newyork1.imageset\newyork1.jpg" />
-    <ImageAsset Include="Assets.xcassets\newyork2.imageset\newyork2.jpg" />
-    <ImageAsset Include="Assets.xcassets\newyork3.imageset\newyork3.jpg" />
-    <ImageAsset Include="Assets.xcassets\newyork4.imageset\newyork4.jpg" />
-    <ImageAsset Include="Assets.xcassets\paris1.imageset\paris1.jpg" />
-    <ImageAsset Include="Assets.xcassets\paris2.imageset\paris2.jpg" />
-    <ImageAsset Include="Assets.xcassets\paris3.imageset\paris3.jpg" />
-    <ImageAsset Include="Assets.xcassets\paris4.imageset\paris4.jpg" />
-    <ImageAsset Include="Assets.xcassets\tokyo1.imageset\tokyo1.jpg" />
-    <ImageAsset Include="Assets.xcassets\tokyo2.imageset\tokyo2.jpg" />
-    <ImageAsset Include="Assets.xcassets\tokyo3.imageset\tokyo3.jpg" />
-    <ImageAsset Include="Assets.xcassets\tokyo4.imageset\tokyo4.jpg" />
-    <ImageAsset Include="Assets.xcassets\singapour1.imageset\singapour1.jpg" />
-    <ImageAsset Include="Assets.xcassets\singapour2.imageset\singapour2.jpg" />
-    <ImageAsset Include="Assets.xcassets\singapour3.imageset\singapour3.jpg" />
-    <ImageAsset Include="Assets.xcassets\singapour4.imageset\singapour4.jpg" />
+    <ImageAsset Include="Assets.xcassets\athenes1.imageset\athenes1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes2.imageset\athenes2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes3.imageset\athenes3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\athenes4.imageset\athenes4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome1.imageset\rome1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome2.imageset\rome2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome3.imageset\rome3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rome4.imageset\rome4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu1.imageset\honolulu1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu2.imageset\honolulu2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu3.imageset\honolulu3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\honolulu4.imageset\honolulu4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne1.imageset\lisbonne1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne2.imageset\lisbonne2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne3.imageset\lisbonne3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lisbonne4.imageset\lisbonne4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres1.imageset\londres1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres2.imageset\londres2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres3.imageset\londres3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\londres4.imageset\londres4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid1.imageset\madrid1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid2.imageset\madrid2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid3.imageset\madrid3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\madrid4.imageset\madrid4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork1.imageset\newyork1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork2.imageset\newyork2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork3.imageset\newyork3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\newyork4.imageset\newyork4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris1.imageset\paris1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris2.imageset\paris2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris3.imageset\paris3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\paris4.imageset\paris4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo1.imageset\tokyo1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo2.imageset\tokyo2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo3.imageset\tokyo3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tokyo4.imageset\tokyo4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour1.imageset\singapour1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour2.imageset\singapour2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour3.imageset\singapour3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\singapour4.imageset\singapour4.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
