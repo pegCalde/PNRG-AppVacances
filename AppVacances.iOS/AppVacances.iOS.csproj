@@ -193,6 +193,10 @@
     <ImageAsset Include="Assets.xcassets\singapour2.imageset\singapour2.jpg" />
     <ImageAsset Include="Assets.xcassets\singapour3.imageset\singapour3.jpg" />
     <ImageAsset Include="Assets.xcassets\singapour4.imageset\singapour4.jpg" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\user.jpg" />
+    <ImageAsset Include="Assets.xcassets\background.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\background.imageset\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -254,5 +258,7 @@
     <Folder Include="Assets.xcassets\singapour2.imageset\" />
     <Folder Include="Assets.xcassets\singapour3.imageset\" />
     <Folder Include="Assets.xcassets\singapour4.imageset\" />
+    <Folder Include="Assets.xcassets\user.imageset\" />
+    <Folder Include="Assets.xcassets\background.imageset\" />
   </ItemGroup>
 </Project>

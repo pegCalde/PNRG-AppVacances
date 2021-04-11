@@ -2,21 +2,38 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppVacances;assembly=AppVacances"
     x:Class="AppVacances.LieuListPage">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView HorizontalOptions="FillAndExpand" ItemsSource="{Binding Lieux}" SelectedItem="{Binding LieuSelected, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Grid.RowSpan="2" Source="background.jpg" Aspect="AspectFill"/>
+                <Label Grid.Row="0" Text="Cher(ère) Utilisateur(ctrice)" HorizontalOptions="Center" VerticalOptions="End" TextColor="White" FontSize="Medium" FontAttributes="Bold"/>
+                <local:RoundedImageControl Grid.Row="1" Grid.RowSpan="2" Image="user.jpg" Size="100"/>
+            </Grid>
+            <Label Grid.Row="1" Text="Liste des lieux de vacances à visiter/noter" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+            <ListView Grid.Row="2" HorizontalOptions="FillAndExpand" ItemsSource="{Binding Lieux}" SelectedItem="{Binding LieuSelected, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Padding="20">
-                                <Label Text="{Binding Intitule}"/>
-                                <Label Text="{Binding Description}"/>
+                                <Label Text="{Binding Nom}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+        </Grid>
+            
     </ContentPage.Content>
 </ContentPage>
