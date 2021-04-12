@@ -10,7 +10,7 @@ namespace AppVacances
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LieuListPage());
+            MainPage = new NavigationPage(new LieuDetailsPage());
         }
 
         protected override void OnStart()
