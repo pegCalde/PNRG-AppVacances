@@ -169,9 +169,7 @@ namespace AppVacances
 
             if (weatherResponse?.Weather != null && weatherResponse.Weather.Any())
             {
-            
-               
-                Température = $"{weatherResponse.Main.Temp}°";
+                Température = $"{weatherResponse.Main.Temp}°"; 
             }
             else
             {

@@ -11,6 +11,14 @@ namespace AppVacances
         {
             InitializeComponent();
             BindingContext = new LieuListPageViewModel();
+          
+        }
+        void Selected_Completed(System.Object sender, System.EventArgs e)
+        {
+            if (BindingContext is LieuDetailsPageViewModel vm)
+            {
+                vm.GetCommand.Execute(sender);
+            }
         }
     }
 }

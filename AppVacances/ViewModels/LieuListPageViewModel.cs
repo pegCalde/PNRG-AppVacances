@@ -157,10 +157,14 @@ namespace AppVacances
 
                 if (LieuSelected != null)
                 {
+               
                     Application.Current.MainPage.Navigation.PushAsync(new LieuDetailsPage(LieuSelected));
                     LieuSelected = null;
+
                 }
+
             }
+            
         }
 
     }

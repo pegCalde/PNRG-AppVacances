@@ -4,27 +4,32 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppVacances.LieuDetailsPage">
     <ScrollView>
-        <Grid BackgroundColor="White" RowSpacing="0">
+        <Grid BackgroundColor="red" RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="0.01*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Grid>
-                    <Label Grid.Row="1" Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End"/>
                     <Frame Grid.Row="0"  Padding="0" Margin="0">
                         <Image Source="{Binding Img}" Aspect="AspectFill"/>
                     </Frame>
-                    <Label Text="{Binding Temperature, StringFormat='Température: {0}'}" TextColor="DarkSlateGray" FontSize="Large" HorizontalOptions="Center"/>
-
+                    
                 </Grid>
+                
             </Grid>
-            <Frame Grid.Row="3" Margin="0">
+            <Grid Grid.Row="1">
+                <Label Grid.Row="1" Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End"/>
+            </Grid>
+
+            <Frame Grid.Row="2" Margin="0">
                 <StackLayout>
                     <Label Text="Description" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
                     <Label Text="{Binding Description}" FontSize="18" HorizontalTextAlignment="End" TextColor="Black"/>
+                    <Label Text="{Binding Température, StringFormat='Température: {0}'}" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+
                 </StackLayout>
             </Frame>
 
