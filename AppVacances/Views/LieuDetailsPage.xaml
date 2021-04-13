@@ -13,29 +13,14 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+                    <Label Grid.Row="1" Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End"/>
                     <Frame Grid.Row="0"  Padding="0" Margin="0">
                         <Image Source="{Binding Img}" Aspect="AspectFill"/>
                     </Frame>
-                    <Grid Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                    <Label Grid.Row="1" Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End"/>
+
+
                 </Grid>
             </Grid>
-            <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="18,0,18,0"/>
-
             <Frame Grid.Row="3" Margin="0">
                 <StackLayout>
                     <Label Text="Description" FontSize="18" FontAttributes="Bold" TextColor="Black"/>

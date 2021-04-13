@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -15,7 +16,7 @@ namespace AppVacances
         string[] imgs;
         bool estFav;
         int notation;
-        double température;
+        string température;
         string icôneMétéo;
    
 
@@ -93,7 +94,7 @@ namespace AppVacances
                 SetProperty(ref notation, value);
             }
         }
-        public double Température
+        public string Température
         {
             get
             {
@@ -130,5 +131,39 @@ namespace AppVacances
             IcôneMétéo = lieu.IcôneMétéo;
         }
 
+
+
+
+        public ICommand GetCommand => new Command(() =>
+          Task.Run(LoadWeatherData)
+       );
+
+        async Task LoadWeatherData()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            IsBusy = true;
+            var client = HttpService.GetInstance();
+            var result = await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?q={Querry}&APPID=6fcb5a969e58b25ffb37b7426ac18d12&units=metric&lang=fr");
+            var serializedResponse = await result.Content.ReadAsStringAsync();
+            var weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(serializedResponse);
+
+            if (weatherResponse?.Weather != null && weatherResponse.Weather.Any())
+            {
+            
+               
+                Température = $"{weatherResponse.Main.Temp}°";
+            }
+            else
+            {
+             
+                Température = "unknown";
+            }
+
+            IsBusy = false;
+        }
     }
 }
