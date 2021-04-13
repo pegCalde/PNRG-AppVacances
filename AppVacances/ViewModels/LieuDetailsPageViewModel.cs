@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace AppVacances
@@ -17,6 +18,25 @@ namespace AppVacances
         int notation;
         double température;
         string icôneMétéo;
+        string favIcon;
+
+        public string FavIcon
+        {
+            get
+            {
+                if(EstFav)
+                {
+                    return "heartfill.png";
+                } else
+                {
+                    return "heart.png";
+                }
+            }
+            set 
+            {
+                SetProperty(ref favIcon, value);
+            }
+        }
    
 
       
@@ -128,6 +148,31 @@ namespace AppVacances
             Notation = lieu.Notation;
             Température = lieu.Température;
             IcôneMétéo = lieu.IcôneMétéo;
+        }
+
+        public ICommand manageFavoriCommand
+        {
+            get
+            {
+                return new Command(manageFavori);
+            }
+        }
+
+        public void manageFavori()
+        {
+            if(EstFav == false)
+            {
+                EstFav = true;
+                Preferences.Set(Nom, true);
+                FavIcon = "heartfill.png";
+                
+            } else
+            {
+                EstFav = false;
+                Preferences.Set(Nom, false);
+                FavIcon = "heart.png";
+            }
+            
         }
 
     }

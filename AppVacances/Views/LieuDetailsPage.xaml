@@ -2,6 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppVacances;assembly=AppVacances"
     x:Class="AppVacances.LieuDetailsPage">
     <Grid BackgroundColor="White" RowSpacing="0">
         <Grid.RowDefinitions>
@@ -31,6 +32,7 @@
                     </Grid.ColumnDefinitions>
                 </Grid>
                 <Label Grid.Row="1" Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="End"/>
+                <ImageButton Grid.Row="1" x:Name="favori" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" Source="{Binding FavIcon}" Command="{Binding manageFavoriCommand}" BackgroundColor="White"/>
             </Grid>
         </Grid>
         <BoxView Grid.Row="1" HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Margin="18,0,18,0"/>

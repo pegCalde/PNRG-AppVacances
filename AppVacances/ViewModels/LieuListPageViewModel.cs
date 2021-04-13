@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace AppVacances
@@ -136,7 +137,13 @@ namespace AppVacances
                 Température = 20,
                 IcôneMétéo = "soleil.jpg"
             });
-
+            for(int i = 0; i < 10; i ++)
+            {
+                if(Preferences.ContainsKey(lieux[i].Nom))
+                {
+                    lieux[i].EstFav = Preferences.Get(lieux[i].Nom, false);
+                }
+            }
         }
 
         public LieuListPageViewModel(ObservableCollection<Lieu> newLieux)
