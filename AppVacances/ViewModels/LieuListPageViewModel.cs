@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace AppVacances
@@ -136,7 +137,13 @@ namespace AppVacances
                 Température = "",
                 IcôneMétéo = "soleil.jpg"
             });
-
+            for(int i = 0; i < lieux.Count; i ++)
+            {
+                if(Preferences.ContainsKey(lieux[i].Nom))
+                {
+                    lieux[i].EstFav = Preferences.Get(lieux[i].Nom, false);
+                }
+            }
         }
 
         public LieuListPageViewModel(ObservableCollection<Lieu> newLieux)
@@ -165,6 +172,31 @@ namespace AppVacances
 
             }
             
+        }
+
+        public ICommand goToFavoriCommand
+        {
+            get
+            {
+                return new Command(goToFavori);
+            }
+        }
+
+        public void goToFavori()
+        {
+            ObservableCollection<Lieu> favoris = new ObservableCollection<Lieu>();
+            for (int i = 0; i < lieux.Count; i++)
+            {
+                if (Preferences.ContainsKey(lieux[i].Nom))
+                {
+                    if(Preferences.Get(lieux[i].Nom, false) == true)
+                    {
+                        favoris.Add(lieux[i]);
+                    }
+                }
+            }
+
+            Application.Current.MainPage.Navigation.PushAsync(new FavoriListPage(favoris));
         }
 
     }

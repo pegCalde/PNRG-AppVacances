@@ -4,6 +4,33 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppVacances.FavoriListPage">
     <ContentPage.Content>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="9*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="{Binding Message}" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+            <ListView Grid.Row="1" x:Name="FavorisList"
+                      HorizontalOptions="FillAndExpand"
+                      ItemsSource="{Binding LieuxFav}"
+                      SelectedItem="{Binding LieuFavSelected, Mode=TwoWay}"
+                      VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Supprimer"
+                                              Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference Name=FavorisList}}"
+                                              CommandParameter="{Binding .}" IsDestructive="True"/>
+                                </ViewCell.ContextActions>
+                                <StackLayout Padding="20">
+                                    <Label Text="{Binding Nom}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

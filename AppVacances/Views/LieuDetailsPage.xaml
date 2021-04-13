@@ -2,6 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppVacances;assembly=AppVacances"
     x:Class="AppVacances.LieuDetailsPage">
     <ScrollView>
         <Grid RowSpacing="0">
@@ -17,6 +18,7 @@
             </Grid>
             <Grid Grid.Row="1">
                 <Label Text="{Binding Nom}" FontSize="40" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                <ImageButton x:Name="favori" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" VerticalOptions="Center" Source="{Binding FavIcon}" Command="{Binding manageFavoriCommand}" BackgroundColor="White"/>
             </Grid>
 
             <StackLayout Grid.Row="2" Margin="10,10,10,0" Padding="10">
@@ -25,14 +27,11 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-
                     <Label Grid.Column="0" Text="{Binding Température, StringFormat='Température: {0}'}" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start"/>
                 </Grid>
                 <Label Grid.Column="0" Text="Description" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
                 <Label Text="{Binding Description}" FontSize="18" HorizontalTextAlignment="Start" TextColor="Black"/>
-
             </StackLayout>
-
         </Grid>
     </ScrollView>
 </ContentPage>

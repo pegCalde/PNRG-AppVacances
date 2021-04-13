@@ -10,6 +10,7 @@
                 <RowDefinition Height="3*"/>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
@@ -33,6 +34,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Grid.Row="3" Text="Liste Favoris" Command="{Binding goToFavoriCommand}" HorizontalOptions="Center" VerticalOptions="Center"/>
         </Grid>
             
     </ContentPage.Content>

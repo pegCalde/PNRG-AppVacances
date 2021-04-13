@@ -20,5 +20,11 @@ namespace AppVacances
                 vm.GetCommand.Execute(sender);
             }
         }
+
+        protected override void OnAppearing()
+        {
+            BindingContext = new LieuListPageViewModel();
+            base.OnAppearing();
+        }
     }
 }
