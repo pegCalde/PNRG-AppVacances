@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -30,6 +32,20 @@ namespace AppVacances
                 ((RoundedImageControl)bindable).frame.CornerRadius = Convert.ToSingle((double)newValue);
             }
         });
+
+        async void OnPickPhotoButtonClicked(object sender, EventArgs e)
+        {
+            (sender as ImageButton).IsEnabled = false;
+
+            Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
+
+            if(stream != null)
+            {
+                image.Source = ImageSource.FromStream(() => stream);
+            }
+
+            (sender as ImageButton).IsEnabled = true;
+        }
 
         public ImageSource Image
         {
