@@ -12,5 +12,11 @@ namespace AppVacances
             InitializeComponent();
             BindingContext = new LieuListPageViewModel();
         }
+
+        protected override void OnAppearing()
+        {
+            BindingContext = new LieuListPageViewModel();
+            base.OnAppearing();
+        }
     }
 }
