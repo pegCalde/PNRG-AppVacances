@@ -137,7 +137,7 @@ namespace AppVacances
                 Température = 20,
                 IcôneMétéo = "soleil.jpg"
             });
-            for(int i = 0; i < 10; i ++)
+            for(int i = 0; i < lieux.Count; i ++)
             {
                 if(Preferences.ContainsKey(lieux[i].Nom))
                 {
@@ -168,6 +168,31 @@ namespace AppVacances
                     LieuSelected = null;
                 }
             }
+        }
+
+        public ICommand goToFavoriCommand
+        {
+            get
+            {
+                return new Command(goToFavori);
+            }
+        }
+
+        public void goToFavori()
+        {
+            ObservableCollection<Lieu> favoris = new ObservableCollection<Lieu>();
+            for (int i = 0; i < lieux.Count; i++)
+            {
+                if (Preferences.ContainsKey(lieux[i].Nom))
+                {
+                    if(Preferences.Get(lieux[i].Nom, false) == true)
+                    {
+                        favoris.Add(lieux[i]);
+                    }
+                }
+            }
+
+            Application.Current.MainPage.Navigation.PushAsync(new FavoriListPage(favoris));
         }
 
     }
