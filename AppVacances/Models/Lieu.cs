@@ -9,7 +9,7 @@ namespace AppVacances
         string[] imgs;
         bool estFav;
         int notation;
-        double température;
+        string température;
         string icôneMétéo;
 
 
@@ -49,7 +49,7 @@ namespace AppVacances
             set;
         }
 
-        public double Température
+        public string Température
         {
             get;
             set;

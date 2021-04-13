@@ -22,9 +22,9 @@ namespace AppVacances
         int notation;
         string température;
         string icôneMétéo;
-   
+        string querry;
 
-      
+
         public string Nom
         {
             get
@@ -108,10 +108,9 @@ namespace AppVacances
             {
                 SetProperty(ref température, value);
             }
-
         }
 
-              public string IcôneMétéo
+        public string IcôneMétéo
         {
             get
             {
@@ -120,6 +119,19 @@ namespace AppVacances
             set
             {
                 SetProperty(ref icôneMétéo, value);
+            }
+        }
+
+        public string Querry
+        {
+            get
+            {
+                return querry;
+            }
+
+            set
+            {
+                SetProperty(ref querry, value);
             }
         }
 
