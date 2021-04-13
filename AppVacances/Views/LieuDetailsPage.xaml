@@ -25,9 +25,10 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Text="Description" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
-                    <Label Grid.Column="1" Text="{Binding Température, StringFormat='Température: {0}'}" TextColor="Black" FontAttributes="Italic" FontSize="18" HorizontalOptions="Start"/>
+
+                    <Label Grid.Column="0" Text="{Binding Température, StringFormat='Température: {0}'}" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start"/>
                 </Grid>
+                <Label Grid.Column="0" Text="Description" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
                 <Label Text="{Binding Description}" FontSize="18" HorizontalTextAlignment="Start" TextColor="Black"/>
 
             </StackLayout>
