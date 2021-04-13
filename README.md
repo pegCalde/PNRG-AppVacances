@@ -78,11 +78,10 @@ Cette application permet à l’utilisateur de consulter différents lieux de va
 
 ### Guillaume
 * Structure OK
-* Persistance des données
+* Persistance des données OK
 * Classe lieux de vacances (que contient l'objet/entité -> nom, pays,...) OK
-* Création partie user sur page accueil -> nom + img profil
-* Custom Renderer
-*  Liste des lieux EN COURS
+* Création partie user sur page accueil -> nom + img profil OK
+*  Liste des lieux OK
    * Au clic sur lieu -> envoi sur la page du lieu
 * ...
 
@@ -108,7 +107,7 @@ Cette application permet à l’utilisateur de consulter différents lieux de va
 
 ### Peggy
 * Classe lieux de vacances (que contient l'objet/entité -> nom, pays,...)
-* Custom Renderer
+* Dependancy Service Photo Picker
 * Recherches pour remplissage infos des lieux
    * img du lieu
    * 3 img max des lieux à voir ds le lieu
