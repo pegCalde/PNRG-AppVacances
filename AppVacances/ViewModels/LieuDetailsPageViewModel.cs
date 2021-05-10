@@ -3,6 +3,7 @@ using AppVacances.Service;
 using Newtonsoft.Json;
 using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -164,6 +165,8 @@ namespace AppVacances
             Notation = lieu.Notation;
             Température = lieu.Température;
             IcôneMétéo = lieu.IcôneMétéo;
+            Querry = lieu.Nom;
+            Task.Run(LoadWeatherData);
         }
 
 
@@ -183,7 +186,6 @@ namespace AppVacances
             var result = await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?q={Querry}&APPID=6fcb5a969e58b25ffb37b7426ac18d12&units=metric&lang=fr");
             var serializedResponse = await result.Content.ReadAsStringAsync();
             var weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(serializedResponse);
-
             if (weatherResponse?.Weather != null && weatherResponse.Weather.Any())
             {
                 Température = $"{weatherResponse.Main.Temp}°"; 
